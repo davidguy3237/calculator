@@ -1,0 +1,90 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+.calculator-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #202020;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #3b3b3b;
+  color: white;
+  border-radius: 8px;
+  font-size: 30px;
+  border: 1px solid #202020;
+}
+
+.operator {
+  background-color: #323232;
+}
+
+.operator.enter {
+  background-color: #4cc3fe;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-auto-rows: 100px;
+}
+
+.displays {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #303030;
+  color: white;
+  width: 400px;
+  height: 75px;
+  margin-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  /* overflow: hidden; */
+}
+
+.display.main {
+  font-size: 60px;
+  text-align: right;
+}
+
+.operator.enter {
+  width: 200px;
+}
+
+.buttons .number:hover {
+  background-color: #282828;
+}
+.buttons .number:active {
+  background-color: #3b3b3b;
+}
+
+.buttons .operator:hover {
+  background-color: #282828;
+}
+.buttons .operator:active {
+  background-color: #202020;
+}
+
+.buttons .operator.enter:hover {
+  background-color: #239bd6;
+}
+.buttons .operator.enter:active {
+  background-color: #4cc3fe;
+}
+
+.active-operator {
+  background-color: #282828;
+}
